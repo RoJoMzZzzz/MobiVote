@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3e54"
+    tools:context="com.mobiapps.andrade.mobivote.Vote">
+
+    <include
+        android:id="@+id/include6"
+        layout="@layout/appbar" />
+
+    <Spinner
+        android:id="@+id/spnPos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#ffff"
+         />
+
+    <Button
+        android:id="@+id/btnCastVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="Cast Vote"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnCastVote"
+        android:layout_alignEnd="@+id/spnPos"
+        android:layout_alignLeft="@+id/spnPos"
+        android:layout_alignRight="@+id/spnPos"
+        android:layout_alignStart="@+id/spnPos"
+        android:layout_below="@+id/spnPos"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3e54"
+    tools:context="com.mobiapps.andrade.mobivote.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/mvlogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Mobile Voting"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Application"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+         />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_userId"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_marginBottom="21dp">
+
+        <EditText
+            android:id="@+id/edtUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter User Id"
+            android:textColor="#fff"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/input_userId"
+        android:layout_alignLeft="@+id/input_userId"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/input_userId"
+        android:layout_alignStart="@+id/input_userId"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="5dp"
+        android:background="#77e7d5"
+        android:text="Start Voting" />
+
+
+</RelativeLayout>

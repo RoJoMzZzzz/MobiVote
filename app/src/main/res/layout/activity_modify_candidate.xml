@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3e54"
+    tools:context="com.mobiapps.andrade.mobivote.ModifyCandidate">
+
+    <include layout="@layout/appbar"
+        android:id="@+id/include5" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_VotersId"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/include5"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/edtCandId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Candidates Id"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spnPos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/input_VotersId"
+        android:layout_alignLeft="@+id/input_VotersId"
+        android:layout_alignRight="@+id/input_VotersId"
+        android:layout_alignStart="@+id/input_VotersId"
+        android:layout_below="@+id/input_VotersId"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#ffff"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_lname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnPos"
+        android:layout_alignStart="@+id/spnPos"
+        android:layout_below="@+id/spnPos"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input_lname"
+        android:layout_alignStart="@+id/input_lname"
+        android:layout_below="@+id/input_lname"
+        android:layout_marginTop="46dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/input_lname"
+        android:layout_alignRight="@+id/input_lname"
+        android:layout_alignTop="@+id/btnSave"
+        android:text="Delete" />
+
+</RelativeLayout>

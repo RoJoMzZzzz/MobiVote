@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3e54"
+    tools:context="com.mobiapps.andrade.mobivote.AddCandidate">
+
+    <include layout="@layout/appbar"
+        android:id="@+id/include4" />
+
+    <Spinner
+        android:id="@+id/spnPos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#ffff"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_VotersId"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/spnPos"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/edtCandName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Candidates Name"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAddCand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_VotersId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="Add Candidate" />
+
+
+</RelativeLayout>
